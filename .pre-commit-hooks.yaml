@@ -1,0 +1,8 @@
+- id: trello-integration
+  name: Trello Integration
+  description: Ensure commit messages align with active Trello cards for traceable code changes and task management. Automates card verification and keeps your project synchronized.
+  entry: trello-integration
+  language: python
+  language_version: python3.8
+  stages: [commit-msg]
+  additional_dependencies: [requests, urllib3==1.26.6, PyInquirer]

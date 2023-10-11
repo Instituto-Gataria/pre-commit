@@ -1,0 +1,9 @@
+repos:
+- repo: local
+  hooks:
+  - id: trello-integration
+    name: Trello Integration
+    entry: python pre_commit_hooks/trello_integration.py
+    language: python
+    additional_dependencies: [requests, urllib3==1.26.6, PyInquirer]
+    stages: [commit-msg]
